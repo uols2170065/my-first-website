@@ -1,16 +1,8 @@
 <!DOCTYPE html>
-<html></html>
+<html>
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BDRE94RZXW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-BDRE94RZXW');
-</script>
 <title>WEB1 - CSS</title>
 <meta charset = "utf-8">
 
@@ -22,13 +14,27 @@
     h1 {
         font-size: 50px;
         text-align: center;
-        border: 3px solid rgb(99, 232, 99);
+        border-bottom: 1px solid gray;
+        margin:0;
+        padding:20px;
     }
-    .응애{
-        color:gray;
+    #grid ol {
+        border-right: 1px solid gray;
+        width:100px;
+        margin:0;
+        padding: 20px;
+        padding-left: 25px;
     }
-    .밥줘{
-        color:red;
+    body{
+        margin:0px;
+    }
+    #grid{
+        display:grid;
+        grid-template-columns: 150px 1fr;
+
+    }
+    #article{
+        padding:5px;
     }
 </style>
 </head>
@@ -36,23 +42,23 @@
 
 <body>
     <a href = "index.html" target= "_blank" title = "WEB에 대한 설명"><h1>WEB</h1></a>
+   
+    <div id="grid">    
+    
     <ol>
-        <a href = "1.html" target= "_blank" title = "HTML에 대한 설명" class = "응애"><li>HTML</li> </a> 
-        <a href = "2.html" target= "_blank" title = "CSS에 대한 설명" class = "응애 밥줘"><li>CSS</li> </a>
+        <a href = "1.html" target= "_blank" title = "HTML에 대한 설명"><li>HTML</li> </a> 
+        <a href = "2.html" target= "_blank" title = "CSS에 대한 설명" ><li>CSS</li> </a>
         <a href = "3.html" target= "_blank" title = "JAVASCRIPT에 대한 설명"><li>JAVASCRIPT </li> </a> 
     </ol>
-    <!--
-    <a href = "index.html" target= "_blank" title = "WEB에 대한 설명"><h1>WEB</h1></a>
-    <ol>
-        <a href = "1.html" target= "_blank" title = "HTML에 대한 설명"><li><font color = "red">HTML</font></li> </a> 
-        <a href = "2.html" target= "_blank" title = "CSS에 대한 설명"><li><font color = "red">CSS </font></li> </a>
-        <a href = "3.html" target= "_blank" title = "JAVASCRIPT에 대한 설명"><li><font color = "red">JAVASCRIPT</font> </li> </a> 
-    </ol>
-    -->
 
-    <h2>CSS</h2>
-    <p>
-        HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일 시트 언어.<br>
-        CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다. 다만 예외로 마진, 패딩, 보더 등의 박스모델 관련 속성은 상속되지 않는다. 물론 inherit 값을 줘서 강제로 상속시킬 순 있다.
-    </p> 
+    <div id="article">
+        <h2>CSS</h2>
+        <p>
+            HTML 등의 마크업 언어로 작성된 문서가 실제로 웹사이트에 표현되는 방법을 정해주는 스타일 시트 언어.<br>
+            CSS의 C가 Cascading의 약자인데, 이는 상위 요소의 스타일 속성을 자손 요소들에게 상속시켜주는 모습이 DOM 트리구조에서 마치 폭포수처럼 내려가는 모습을 닮았기 때문이다. 다만 예외로 마진, 패딩, 보더 등의 박스모델 관련 속성은 상속되지 않는다. 물론 inherit 값을 줘서 강제로 상속시킬 순 있다.
+        </p> 
+    </div>
+
+    </div>
 </body>
+</html>
